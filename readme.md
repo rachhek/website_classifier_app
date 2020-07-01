@@ -61,7 +61,7 @@ Result explanation
 
 ```
 "predicted_class" : The class that was predicted.
-"prob_distribution" : The probability distribution (in precentage) of the 11 classes for this website.
+"prob_distribution" : The probability distribution (in percentage) of the 11 classes for this website.
 ```
 
 App Screenshot
