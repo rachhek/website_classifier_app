@@ -6,15 +6,15 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pandas = "*"
 beautifulsoup4 = "*"
-sklearn = "*"
 requests = "*"
 pyfiglet = "*"
-clint = "*"
 lxml = "*"
-spacy = "==2.2"
-en-core-web-sm = {file = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz"}
+spacy = "==3.5.0"
+en-core-web-sm = {file = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz"}
+clint = "*"
+scikit-learn = "*"
+pandas = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.10"
