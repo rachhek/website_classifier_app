@@ -135,9 +135,9 @@ class WebsiteClassifierTool:
         try:
             # Read the pre-trained tfidf vectorizer and logistric regression model
             tfidf_vectorizer_file = os.path.join(
-                sys.path[0], "model\\tfidf_vectorizer.pk")
+                sys.path[0], "model/tfidf_vectorizer.pk")
             log_reg_model_file = os.path.join(
-                sys.path[0], "model\\logistic_regression_78_acc.sav")
+                sys.path[0], "model/logistic_regression_78_acc.sav")
 
             if os.path.exists(tfidf_vectorizer_file):
                 self.tfidf_tokenizer = pd.read_pickle(tfidf_vectorizer_file)
@@ -217,6 +217,6 @@ class WebsiteClassifierTool:
         '''
         Get the words with the highest tf-idf values.
         '''
-        feature_names = np.array(self.tfidf_tokenizer.get_feature_names())
+        feature_names = np.array(self.tfidf_tokenizer.get_feature_names_out())
         sorted_vectors = np.argsort(vectorized_text.data)[:-(top_n):-1]
         return feature_names[vectorized_text.indices[sorted_vectors]]
